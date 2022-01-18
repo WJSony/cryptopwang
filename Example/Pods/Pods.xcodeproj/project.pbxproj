@@ -13,6 +13,8 @@
 		6974B0B832C015E63BAAB01792DEC6CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		7BA48DBB555A51DF440E5D37D19B4F75 /* Pods-WJModule_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5945A3A2C66055044C2A8A08D872D5D0 /* Pods-WJModule_Tests-dummy.m */; };
 		9DE45BB10AAD1A9C4286076AAAE5459C /* WJModule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0DF6406B7ACA85E12AF805A5180019 /* WJModule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0B4FB29279676680007768B /* WJModuleManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A0B4FB27279676680007768B /* WJModuleManager.h */; };
+		A0B4FB2A279676680007768B /* WJModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B4FB28279676680007768B /* WJModuleManager.m */; };
 		B621829FC247B0834BCF8924074986A3 /* Pods-WJModule_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC0D9F955312585AF2660793BAE2FBF /* Pods-WJModule_Example-dummy.m */; };
 		C3381063C50B3AF9026DBC4DC90C97C6 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 795A54F82474235269FC40C3DC52DD4C /* ReplaceMe.m */; };
 		C44AE41DBEEBE31E4A6C655177D31DD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -51,15 +53,17 @@
 		607E4AAC6ACBFC089A45A3485369B0FF /* Pods-WJModule_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WJModule_Example-frameworks.sh"; sourceTree = "<group>"; };
 		6FCF2877FA23DE193C6CB68F9AF269FE /* Pods-WJModule_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WJModule_Tests-umbrella.h"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		73EB2CFD4CD23F475FC9691BD5ADB912 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		73EB2CFD4CD23F475FC9691BD5ADB912 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		74E8EE36BCB38B03A8D29E7A8680E4C7 /* Pods-WJModule_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WJModule_Tests-Info.plist"; sourceTree = "<group>"; };
 		795A54F82474235269FC40C3DC52DD4C /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = WJModule/Classes/ReplaceMe.m; sourceTree = "<group>"; };
-		7BED21D8FFEFE926862644032D33A871 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7BED21D8FFEFE926862644032D33A871 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		83048AC4A9E3F9A7A8CB59184CA6CF5C /* Pods-WJModule_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WJModule_Example.modulemap"; sourceTree = "<group>"; };
 		883991B6B9256EE3BF5ACB30982C3492 /* WJModule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WJModule-dummy.m"; sourceTree = "<group>"; };
 		893D721C7F48E32E55B37EE990285357 /* WJModule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WJModule-Info.plist"; sourceTree = "<group>"; };
-		916F7321882C31B563DFA6AE3D282D74 /* WJModule.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WJModule.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		916F7321882C31B563DFA6AE3D282D74 /* WJModule.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WJModule.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0B4FB27279676680007768B /* WJModuleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WJModuleManager.h; path = WJModule/Classes/WJModuleManager.h; sourceTree = "<group>"; };
+		A0B4FB28279676680007768B /* WJModuleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WJModuleManager.m; path = WJModule/Classes/WJModuleManager.m; sourceTree = "<group>"; };
 		A1AC9E41C9081992EB9D9EDAC458DD59 /* Pods-WJModule_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WJModule_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A30B12E33F5C53578DCEC44727AF60EF /* Pods-WJModule_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WJModule_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A44F6CD963BAFF0A5D1D55D61219E16A /* Pods-WJModule_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WJModule_Example-Info.plist"; sourceTree = "<group>"; };
@@ -182,6 +186,8 @@
 				795A54F82474235269FC40C3DC52DD4C /* ReplaceMe.m */,
 				6F8CB86678BFE77E38162A586CB4DDE1 /* Pod */,
 				A3ECC1CE2F1770B23A308ACBDF13C164 /* Support Files */,
+				A0B4FB27279676680007768B /* WJModuleManager.h */,
+				A0B4FB28279676680007768B /* WJModuleManager.m */,
 			);
 			name = WJModule;
 			path = ../..;
@@ -247,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DE45BB10AAD1A9C4286076AAAE5459C /* WJModule-umbrella.h in Headers */,
+				A0B4FB29279676680007768B /* WJModuleManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B4FB2A279676680007768B /* WJModuleManager.m in Sources */,
 				C3381063C50B3AF9026DBC4DC90C97C6 /* ReplaceMe.m in Sources */,
 				5602C4B0A60784702066A2A15075B6DA /* WJModule-dummy.m in Sources */,
 			);
@@ -718,8 +726,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
