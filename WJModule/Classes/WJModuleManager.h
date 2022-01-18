@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WJModuleManager : NSObject
 
++ (void)wj_Module;
 @end
 
 NS_ASSUME_NONNULL_END

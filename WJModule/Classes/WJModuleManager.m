@@ -9,4 +9,8 @@
 
 @implementation WJModuleManager
 
++ (void)wj_Module {
+    NSLog(@"%s", __func__);
+}
+
 @end
