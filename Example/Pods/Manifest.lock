@@ -1,0 +1,16 @@
+PODS:
+  - WJModule (0.1.0)
+
+DEPENDENCIES:
+  - WJModule (from `../`)
+
+EXTERNAL SOURCES:
+  WJModule:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WJModule: bce5cb482ee4156e1eaac5a01e14265b78876231
+
+PODFILE CHECKSUM: 17a19e87305908f8f4f1c15d3a6f6a802c74b107
+
+COCOAPODS: 1.11.2
